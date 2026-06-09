@@ -83,6 +83,7 @@ If port `5173` is already in use, stop the other process before starting Vite.
 - Use [`render.yaml`](/c:/Users/Ssi/OneDrive%20-%20Sudhir%20Srivastava%20Innovations%20Pvt.%20Ltd/Desktop/data/render.yaml) to deploy a single Node web service.
 - The service builds the frontend first, then starts the backend.
 - The backend serves the React app in production, so the frontend and API share the same origin.
+- The Render start command should be `node backend/src/server.js` when the repo root is used.
 - Set `ALLOWED_ORIGINS` to the Render service URL, for example `https://surgical-instrument-backend.onrender.com`.
 - Use an external MySQL instance and run [`backend/sql/schema.sql`](/c:/Users/Ssi/OneDrive%20-%20Sudhir%20Srivastava%20Innovations%20Pvt.%20Ltd/Desktop/data/backend/sql/schema.sql) before the first deploy.
 

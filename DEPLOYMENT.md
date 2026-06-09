@@ -54,7 +54,7 @@ git push -u origin main
    - **Name**: `surgical-instrument-backend`
    - **Runtime**: `Node`
    - **Build Command**: `cd frontend && npm install && npm run build && cd ../backend && npm install`
-   - **Start Command**: `cd backend && npm run start`
+   - **Start Command**: `node backend/src/server.js`
    - **Health Check Path**: `/api/health`
    - **Plan**: Free or higher
 
