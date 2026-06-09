@@ -1,0 +1,33 @@
+{
+  "name": "surgical-instrument-testing-backend",
+  "version": "1.0.0",
+  "description": "Backend API for surgical instrument testing tracker",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "test-db": "node scripts/testDb.js",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/services/testService.js && node --check src/services/reportService.js && node --check src/services/backupService.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.5.2",
+    "morgan": "^1.10.0",
+    "pdfkit": "^0.15.0",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

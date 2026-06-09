@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #f4f7fb;
+  --color-card: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #526176;
+  --color-border: #d7dee8;
+  --color-brand: #0f4c81;
+  --color-success: #14833b;
+  --color-danger: #b42318;
+}
+
+.dark {
+  --color-bg: #0b1118;
+  --color-card: #121b25;
+  --color-text: #e8eff7;
+  --color-muted: #9fb2c7;
+  --color-border: #2a3a4d;
+  --color-brand: #58a6ff;
+  --color-success: #33c95f;
+  --color-danger: #f45f5f;
+}
+
+body {
+  @apply bg-bg text-text font-sans antialiased;
+  background-image: linear-gradient(160deg, rgba(15, 76, 129, 0.08), transparent 38%),
+    radial-gradient(circle at 20% 10%, rgba(20, 131, 59, 0.08), transparent 30%);
+  min-height: 100vh;
+}
+
+.panel {
+  @apply rounded-xl border border-border bg-card shadow-panel;
+}
+
+.input-base {
+  @apply w-full rounded-lg border border-border bg-transparent px-3 py-2 text-sm text-text outline-none transition focus:border-brand;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition;
+}
+
+.btn-primary {
+  @apply btn bg-brand text-white hover:opacity-90;
+}
+
+.btn-secondary {
+  @apply btn border border-border text-text hover:bg-white/5;
+}
